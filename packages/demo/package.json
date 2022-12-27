@@ -1,0 +1,37 @@
+{
+  "name": "kdu-resize-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo for kdu-resize",
+  "author": "NKDuy",
+  "scripts": {
+    "serve": "kdu-cli-service serve",
+    "build": "kdu-cli-service build",
+    "lint": "kdu-cli-service lint"
+  },
+  "dependencies": {
+    "kdu": "^2.6.14",
+    "kdu-resize": "^1.0.0"
+  },
+  "devDependencies": {
+    "@kdujs/cli-plugin-babel": "^4.0.0",
+    "@kdujs/cli-plugin-eslint": "^4.0.0",
+    "@kdujs/cli-service": "^4.0.0",
+    "@kdujs/eslint-config-standard": "^5.0.0",
+    "eslint": "^7.16.0",
+    "kdu-template-compiler": "^2.6.14",
+    "stylus": "^0.54.8",
+    "stylus-loader": "^3"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "root": true
+}

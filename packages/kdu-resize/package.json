@@ -1,0 +1,71 @@
+{
+  "name": "kdu-resize",
+  "description": "Detects DOM element resizing",
+  "version": "1.0.0",
+  "author": "NKDuy",
+  "keywords": [
+    "kdu",
+    "kdujs",
+    "plugin"
+  ],
+  "license": "MIT",
+  "main": "dist/kdu-resize.umd.js",
+  "module": "dist/kdu-resize.esm.js",
+  "unpkg": "dist/kdu-resize.min.js",
+  "scripts": {
+    "build": "yarn run build:browser && yarn run build:es && yarn run build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.js",
+    "build:es": "rollup --config build/rollup.config.es.js",
+    "build:umd": "rollup --config build/rollup.config.umd.js",
+    "lint": "eslint --ext .js,.kdu src"
+  },
+  "watch": {
+    "build": "src/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khanhduy1407/kdu-resize.git",
+    "directory": "packages/kdu-resize"
+  },
+  "bugs": {
+    "url": "https://github.com/khanhduy1407/kdu-resize/issues"
+  },
+  "homepage": "https://github.com/khanhduy1407/kdu-resize#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@rollup/plugin-babel": "^5.2.2",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-eslint": "^8.0.1",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-replace": "^2.3.1",
+    "autoprefixer": "^9.7.5",
+    "babel-eslint": "^10.1.0",
+    "clean-css": "^4.1.8",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.16.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-html": "^6.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-kdu": "^8.0.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "fs-extra": "^9.0.0",
+    "kdu": "^2.6.14",
+    "kdu-template-compiler": "^2.6.14",
+    "rollup": "^2.2.0",
+    "rollup-plugin-css-only": "^2.0.0",
+    "rollup-plugin-css-porter": "^1.0.2",
+    "rollup-plugin-kdu": "^5.1.6",
+    "rollup-plugin-terser": "^5.3.0"
+  },
+  "peerDependencies": {
+    "kdu": "^2.6.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
